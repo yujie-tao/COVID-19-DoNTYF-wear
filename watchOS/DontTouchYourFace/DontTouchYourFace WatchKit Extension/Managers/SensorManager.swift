@@ -87,7 +87,7 @@ final class SensorManager: SensorManagerInterface, CalibrationInterface {
 	func startMagnetometerCalibration() {
 		// Fresh buffer
 		magnetometerBuffer = RingBuffer(count: Int(Constant.sensorDataFrequency) * Constant.magnetometerCollectionDataSeconds)
-		motionManager.startDeviceMotionUpdates(to: queue) { [weak self] (deviceMotion, error) in
+		motionManager.startDeviceMotionUpdates(using: .xMagneticNorthZVertical, to: queue) { [weak self] (deviceMotion, error) in
 			guard let _self = self else {
 				return
 			}
@@ -229,9 +229,12 @@ extension SensorManager {
 		switch type {
 		case .magnetometer:
 			// If the magnetometer isn't available
-			if !motionManager.isMagnetometerAvailable {
+            // Yujie: some how isMagnetometerAvailable is always False but still able to get magfield data
+//			if !motionManager.isMagnetometerAvailable {
+            if !motionManager.isDeviceMotionAvailable {
 				// In debug mode add a fake magnetometer data using the user's acceleration
 				#if DEBUG
+                print("debug mode")
 				return MagnetometerData(
 					x: deviceMotion.userAcceleration.x,
 					y: deviceMotion.userAcceleration.y,
@@ -252,7 +255,6 @@ extension SensorManager {
 			let x = deviceMotion.gravity.x
 			let y = deviceMotion.gravity.y
 			let z = deviceMotion.gravity.z
-
 			let pitch: Double = {
 				let theta = atan2(-x, sqrt(pow(y, 2) + pow(z, 2))) * (180 / .pi)
 				let isOnRightWrist = WKInterfaceDevice.current().wristLocation == .right

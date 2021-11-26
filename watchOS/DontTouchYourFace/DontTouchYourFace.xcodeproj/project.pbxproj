@@ -498,7 +498,7 @@
 				CODE_SIGN_ENTITLEMENTS = "DontTouchYourFace WatchKit Extension/DontTouchYourFace WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 62KK4CLZ8M;
+				DEVELOPMENT_TEAM = MT55WQKT3L;
 				INFOPLIST_FILE = "DontTouchYourFace WatchKit Extension/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -506,13 +506,13 @@
 					"@executable_path/../../Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ndppphz.DontTouchYourFace.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interventionems.app.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -523,20 +523,20 @@
 				CODE_SIGN_ENTITLEMENTS = "DontTouchYourFace WatchKit Extension/DontTouchYourFace WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 62KK4CLZ8M;
+				DEVELOPMENT_TEAM = MT55WQKT3L;
 				INFOPLIST_FILE = "DontTouchYourFace WatchKit Extension/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ndppphz.DontTouchYourFace.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interventionems.app.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -547,16 +547,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 62KK4CLZ8M;
+				DEVELOPMENT_TEAM = MT55WQKT3L;
 				IBSC_MODULE = DontTouchYourFace_WatchKit_Extension;
 				INFOPLIST_FILE = "DontTouchYourFace WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ndppphz.DontTouchYourFace.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interventionems.app.watchkitapp;
 				PRODUCT_NAME = DTYF;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -567,16 +567,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 62KK4CLZ8M;
+				DEVELOPMENT_TEAM = MT55WQKT3L;
 				IBSC_MODULE = DontTouchYourFace_WatchKit_Extension;
 				INFOPLIST_FILE = "DontTouchYourFace WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ndppphz.DontTouchYourFace.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interventionems.app.watchkitapp;
 				PRODUCT_NAME = DTYF;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -585,10 +585,12 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 62KK4CLZ8M;
+				DEVELOPMENT_TEAM = MT55WQKT3L;
 				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To recognise self-touches face movements in background";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "To recognise self-touches face movements in background";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ndppphz.DontTouchYourFace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interventionems.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -599,10 +601,12 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 62KK4CLZ8M;
+				DEVELOPMENT_TEAM = MT55WQKT3L;
 				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To recognise self-touches face movements in background";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "To recognise self-touches face movements in background";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ndppphz.DontTouchYourFace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interventionems.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};

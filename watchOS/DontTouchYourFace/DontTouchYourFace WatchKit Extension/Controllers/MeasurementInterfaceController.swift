@@ -99,6 +99,7 @@ final class MeasurementInterfaceController: WKInterfaceController {
 
 				let pitch = gravityData.pitch
 				let magnetometerValues = sensorsData.first { $0 is MagnetometerData} as? MagnetometerData
+                print([magnetometerValues?.x, magnetometerValues?.y, magnetometerValues?.z])
 
 				// Print values
 				let thetaString = String(format: "%.2f", pitch)
